@@ -1,0 +1,109 @@
+body{
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contacts-block, .chat-block{
+    border: 1px solid;
+    height: 100vh;
+}
+.contacts-block{
+    flex: 2 1;
+}
+.chat-block{
+    flex: 4;
+}
+
+.search {
+    border: 1px solid rgb(118, 115, 115, 0.2);
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px;
+}
+
+.contact {
+    border: 1px solid rgb(161, 160, 160,0.3);
+    display: flex;
+    height: 13%;
+    margin-bottom: 5px;
+    padding: 5px;
+    align-items: center;
+}
+
+
+.avatar{
+   flex: 1;
+   border-radius: 100%;
+   border: 1px solid rgb(111, 107, 107, 0.2);
+ /* 1 */
+   height: 100%;
+   margin: auto;
+   margin-right: 5%; 
+}
+.info{
+    flex:4;
+  
+}
+.time{
+    flex:1;
+    font-size: 0.5em;
+    /* 2 */
+    text-align: center;
+    opacity: 0.4;
+   
+}
+.red{
+    background-color: red;
+    
+}
+.green{
+    background-color: green;
+}
+.yellow{
+    background-color: yellow;
+}
+
+.name{
+    font-weight: bold;
+    font-size: 0.7em;
+}
+.msg {
+    font-size: 0.5em;
+    opacity: 0.4;
+}
+
+.contact:nth-child(2)
+{
+    background-color: rgb(203, 203, 231);
+}
+
+.chat-block{
+    display: flex;
+    flex-direction: column;
+
+}
+.chat-block div{
+    border: 1px solid
+}
+.selected-contact{
+    padding:3%;
+}
+.chat{
+   padding: 3%;
+   display: flex;
+   flex-direction: column;
+   gap:5px;
+}
+.message-input{
+        padding: 3%;
+}
+.chat-msg{
+         border-radius: 10px;
+         font-size: 0.7em;
+         width:fit-content;
+         padding: 2px;
+         
+}
+.me{
+    align-self: flex-end;
+}
